@@ -1,0 +1,287 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60BDA37D189AB30100D38A15 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60BDA37C189AB30100D38A15 /* AppKit.framework */; };
+		60BDA37F189AB30100D38A15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60BDA37E189AB30100D38A15 /* Foundation.framework */; };
+		60BDA385189AB30100D38A15 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 60BDA383189AB30100D38A15 /* InfoPlist.strings */; };
+		60BDA388189AB30100D38A15 /* OROpenInAppCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BDA387189AB30100D38A15 /* OROpenInAppCode.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		60BDA379189AB30100D38A15 /* OROpenInAppCode.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OROpenInAppCode.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		60BDA37C189AB30100D38A15 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		60BDA37E189AB30100D38A15 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		60BDA382189AB30100D38A15 /* OROpenInAppCode-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OROpenInAppCode-Info.plist"; sourceTree = "<group>"; };
+		60BDA384189AB30100D38A15 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		60BDA386189AB30100D38A15 /* OROpenInAppCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OROpenInAppCode.h; sourceTree = "<group>"; };
+		60BDA387189AB30100D38A15 /* OROpenInAppCode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OROpenInAppCode.m; sourceTree = "<group>"; };
+		60BDA389189AB30100D38A15 /* OROpenInAppCode-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OROpenInAppCode-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60BDA376189AB30100D38A15 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60BDA37D189AB30100D38A15 /* AppKit.framework in Frameworks */,
+				60BDA37F189AB30100D38A15 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60BDA370189AB30100D38A15 = {
+			isa = PBXGroup;
+			children = (
+				60BDA380189AB30100D38A15 /* OROpenInAppCode */,
+				60BDA37B189AB30100D38A15 /* Frameworks */,
+				60BDA37A189AB30100D38A15 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		60BDA37A189AB30100D38A15 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60BDA379189AB30100D38A15 /* OROpenInAppCode.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60BDA37B189AB30100D38A15 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60BDA37C189AB30100D38A15 /* AppKit.framework */,
+				60BDA37E189AB30100D38A15 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		60BDA380189AB30100D38A15 /* OROpenInAppCode */ = {
+			isa = PBXGroup;
+			children = (
+				60BDA386189AB30100D38A15 /* OROpenInAppCode.h */,
+				60BDA387189AB30100D38A15 /* OROpenInAppCode.m */,
+				60BDA381189AB30100D38A15 /* Supporting Files */,
+			);
+			path = OROpenInAppCode;
+			sourceTree = "<group>";
+		};
+		60BDA381189AB30100D38A15 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60BDA382189AB30100D38A15 /* OROpenInAppCode-Info.plist */,
+				60BDA383189AB30100D38A15 /* InfoPlist.strings */,
+				60BDA389189AB30100D38A15 /* OROpenInAppCode-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60BDA378189AB30100D38A15 /* OROpenInAppCode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60BDA38C189AB30100D38A15 /* Build configuration list for PBXNativeTarget "OROpenInAppCode" */;
+			buildPhases = (
+				60BDA375189AB30100D38A15 /* Sources */,
+				60BDA376189AB30100D38A15 /* Frameworks */,
+				60BDA377189AB30100D38A15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OROpenInAppCode;
+			productName = OROpenInAppCode;
+			productReference = 60BDA379189AB30100D38A15 /* OROpenInAppCode.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60BDA371189AB30100D38A15 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Orta Therox";
+			};
+			buildConfigurationList = 60BDA374189AB30100D38A15 /* Build configuration list for PBXProject "OROpenInAppCode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 60BDA370189AB30100D38A15;
+			productRefGroup = 60BDA37A189AB30100D38A15 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60BDA378189AB30100D38A15 /* OROpenInAppCode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60BDA377189AB30100D38A15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60BDA385189AB30100D38A15 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60BDA375189AB30100D38A15 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60BDA388189AB30100D38A15 /* OROpenInAppCode.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		60BDA383189AB30100D38A15 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				60BDA384189AB30100D38A15 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		60BDA38A189AB30100D38A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		60BDA38B189AB30100D38A15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		60BDA38D189AB30100D38A15 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OROpenInAppCode/OROpenInAppCode-Prefix.pch";
+				INFOPLIST_FILE = "OROpenInAppCode/OROpenInAppCode-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		60BDA38E189AB30100D38A15 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OROpenInAppCode/OROpenInAppCode-Prefix.pch";
+				INFOPLIST_FILE = "OROpenInAppCode/OROpenInAppCode-Info.plist";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60BDA374189AB30100D38A15 /* Build configuration list for PBXProject "OROpenInAppCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60BDA38A189AB30100D38A15 /* Debug */,
+				60BDA38B189AB30100D38A15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60BDA38C189AB30100D38A15 /* Build configuration list for PBXNativeTarget "OROpenInAppCode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60BDA38D189AB30100D38A15 /* Debug */,
+				60BDA38E189AB30100D38A15 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60BDA371189AB30100D38A15 /* Project object */;
+}
