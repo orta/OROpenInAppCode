@@ -33,7 +33,12 @@ static OROpenInAppCode *sharedPlugin;
     if (self = [super init])
     if(!self) return nil;
 
-    [self setup];
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self
+     selector:@selector(setup)
+     name:NSApplicationDidFinishLaunchingNotification
+     object:nil];
+    
 
     return self;
 }
@@ -41,21 +46,20 @@ static OROpenInAppCode *sharedPlugin;
 
 - (void)setup
 {
-
     // Add menu bar items for the 'Show Project in Finder' and 'Open Project in Terminal' actions
     NSMenu *fileMenu = [[[NSApp mainMenu] itemWithTitle:@"File"] submenu];
     NSInteger desiredMenuItemIndex = [fileMenu indexOfItemWithTitle:@"Open with External Editor"];
-
+    
     if(fileMenu && (desiredMenuItemIndex >= 0)) {
-
         NSMenuItem *openWithExternalEditorMenuItem = [[NSMenuItem alloc] initWithTitle:@"Open Project in AppCode" action:@selector(openInAppCode:) keyEquivalent:@"a"];
         [openWithExternalEditorMenuItem setTarget:self];
         [openWithExternalEditorMenuItem setKeyEquivalentModifierMask:NSCommandKeyMask | NSControlKeyMask];
         [fileMenu insertItem:openWithExternalEditorMenuItem atIndex:desiredMenuItemIndex];
-
-
     } else if([NSApp mainMenu]) {
         NSLog(@"OROpenInAppCode Xcode plugin: Couldn't find an 'Open with External Editor' item in the File menu");
+    }
+    else{
+        NSLog(@"OROpenInAppCode Xcode plugin: Couldn't get menu");
     }
 }
 
