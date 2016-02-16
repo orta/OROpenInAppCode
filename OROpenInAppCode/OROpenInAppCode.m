@@ -67,11 +67,18 @@ static OROpenInAppCode *sharedPlugin;
 {
     NSURL *currentFileURL = [self currentProjectURL];
     if(currentFileURL) {
-        [[NSWorkspace sharedWorkspace] openURLs:@[currentFileURL]
-                        withAppBundleIdentifier:@"com.jetbrains.AppCode"
-                                        options:0
-                 additionalEventParamDescriptor:nil
-                              launchIdentifiers:nil];
+        NSArray *bundleIds = @[@"com.jetbrains.AppCode-EAP", @"com.jetbrains.AppCode"];
+        for (NSString *bundleIdentifier in bundleIds)
+        {
+            if ([[NSWorkspace sharedWorkspace] openURLs:@[currentFileURL]
+                            withAppBundleIdentifier:bundleIdentifier
+                                            options:0
+                     additionalEventParamDescriptor:nil
+                                  launchIdentifiers:nil])
+            {
+                break;
+            }
+        }
     }
 }
 
